@@ -32,8 +32,6 @@
 47 10 * * * node /scripts/jd_djjl.js >> /scripts/logs/jd_djjl.log 2>&1
 #众筹许愿池
 20 12 * * * node /scripts/jd_wishingPool.js >> /scripts/logs/jd_wishingPool.log 2>&1
-#汪汪乐园
-30 2,20 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1
 #新签到
 10 0,18 * * * node /scripts/jd_NewSign.js >> /scripts/logs/jd_NewSign.log 2>&1
 #送豆得豆
@@ -46,10 +44,6 @@
 0-59/30 * * * * node /scripts/jd_moneyTree_help.js >> /scripts/logs/jd_moneyTree_help.log 2>&1
 # MMdou
 21 9 * * * node /scripts/jd_MMdou.js >> /scripts/logs/jd_MMdou.log 2>&1
-# jd_opencard13
-11 0,8,15 * * * node /scripts/jd_opencard13.js >> /scripts/logs/jd_opencard13.log 2>&1
-# jd_opencard14
-05 0,8,15 * * * node /scripts/jd_opencard14.js >> /scripts/logs/jd_opencard14.log 2>&1
 #京喜领88元红包
 30 1,6,12,15,18 * * * node /scripts/jd_jxlhb.js >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜首页签到
@@ -64,6 +58,16 @@
 15 10 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.log 2>&1
 # 零食街
 15 0,12 * * * node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1
+# 电脑配件抢京豆（一次性脚本）
+1 0 * * * node /scripts/jd_task1.js >> /scripts/logs/jd_task1.log 2>&1
+# jd_opencard16
+30 0,9,18 * * * node /scripts/jd_opencard16.js >> /scripts/logs/jd_opencard16.log 2>&1
+# jd_opencard17
+30 1,10,19 * * * node /scripts/jd_opencard17.js >> /scripts/logs/jd_opencard17.log 2>&1
+# jd_opencard18
+30 2,8,17 * * * node /scripts/jd_opencard18.js >> /scripts/logs/jd_opencard18.log 2>&1
+# 内容鉴赏官
+15 2,5 * * * node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
 ##############长期活动##############
 # 签到
 0 0,18 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -91,6 +95,8 @@
 55 23 * * * node /scripts/jd_unsubscribe.js >> /scripts/logs/jd_unsubscribe.log 2>&1
 # 京豆变动通知
 0 10 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
+# 京豆变动简洁版
+0 9 * * * node /scripts/jd_bean_change_clean.js >> /scripts/logs/jd_bean_change_clean.log 2>&1
 # 天天提鹅
 18 * * * * node /scripts/jd_daily_egg.js >> /scripts/logs/jd_daily_egg.log 2>&1
 # 金融养猪
